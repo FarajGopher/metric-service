@@ -47,14 +47,14 @@ use this folder for common functionality so that code is less redundant and ambi
 i have added logrus for logging
 
 ## Go run command
-go run main.go with command line argument for (local, dev, stg, prod)
+`go run main.go` with command line argument for (local, dev, stg, prod)
 
 ## docker build command
-- docker build -t metrics_service . (Run this command in your root directory)
-- docker run -p 8080:8080 metrics_service (Now to run above image you need to run this command)
+- `docker build -t metrics_service .` (Run this command in your root directory)
+- `docker run -p 8080:8080 metrics_service` (Now to run above image you need to run this command)
 
 ## run test 
-go test ./tests/ (To run test)
+go test `./tests/` (To run test)
 
 ## assumptions
 - we need to register the post route as webhook on k8 so that we have the metrics
